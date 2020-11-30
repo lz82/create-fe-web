@@ -1,6 +1,6 @@
 {
 	"name": "create-fe-web",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"description": "a cli to create front-end website",
 	"main": "index.js",
 	"scripts": {
