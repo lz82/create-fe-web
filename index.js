@@ -45,7 +45,10 @@ const run = async () => {
 
   const { template } = await inquirer.askTemplate();
 
-  console.log(name);
+  const templateList = [
+    "lz82/cra-ts-redux-template#master",
+    "lz82/cra-js-redux-template#master",
+  ];
   // 判断当前目录下是否存在name文件夹
   if (files.directoryExists(name)) {
     console.log(chalk.red(`已存在该文件夹：${name}`));
@@ -65,7 +68,7 @@ const run = async () => {
     ]);
     status.start();
     download(
-      "lz82/cra-ts-redux-template#master",
+      templateList[template - 1],
       path.join(__dirname, name),
       {
         clone: false,
